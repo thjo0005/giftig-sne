@@ -206,23 +206,6 @@ svg polyline {
   line-height: 1.45;
   font-size: clamp(0.95rem, 0.9rem + 0.2vw, 1.05rem);
 }
-.title-bar {
-  background: #000;
-  color: #fff;
-  text-align: center;
-  font-weight: 800;
-  letter-spacing: 0.02em;
-  font-size: clamp(1rem, 0.95rem + 0.2vw, 1.1rem);
-  padding: 0.75rem 0;
-  border-radius: 22px 22px 0 0;
-  margin: -1.25rem -1.25rem 1rem -1.25rem;
-}
-.info-card p {
-  margin: 0 0 1rem;
-}
-.info-card p strong {
-  font-weight: 800;
-}
 
 .info-box {
   border-radius: 12px;
@@ -251,4 +234,42 @@ svg polyline {
   .card-col {
     max-width: 540px;
   }
+}
+
+/* === ZOMBIE MATCH TYPOGRAPHY === */
+
+/* Titel i sort bar */
+.info-card .title-bar {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+}
+
+/* Brødtekst i det hvide felt */
+.info-card .z-body p {
+  font-size: 18px;
+  line-height: 1.38;
+  margin-bottom: 1.2rem;
+  font-weight: 400;
+}
+
+/* Fed tekst i brødtekst */
+.info-card .z-body p strong {
+  font-weight: 800;
+}
+
+/* Info-bokse nederst */
+.info-card .info-box {
+  font-size: 17px;
+  line-height: 1.35;
+  padding: 1rem 1rem;
+}
+
+/* Ekstra spacing mellem de to bokse */
+.info-card .info-box + .info-box {
+  margin-top: 0.7rem;
+}
+.info-card .z-body p {
+  font-size: 18px !important;
 }
