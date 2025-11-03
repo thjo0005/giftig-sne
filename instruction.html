@@ -509,32 +509,123 @@
             />
           </g>
         </svg>
+        <div class="virus-btns">
+          <button id="Influenza" class="virus-btn">Influenza</button>
+          <button id="Roskildesyge" class="virus-btn">Roskildesyge</button>
+          <button id="Borrelia" class="virus-btn">Borrelia</button>
+        </div>
 
-        <button id="Influenza">Influenza</button>
-
-        <button id="Roskildesyge">Roskildesyge</button>
-
-        <button id="Borrelia">Borrelia</button>
       </section>
-      <section class="info-text">
-        <h2>INFLUENZA!!!</h2>
-        <article>
-          <p class="placeholder">
-            Forvir virussen ved at skifte omgivelser hurtigt. Gå fra indendørs
-            til udendørs eller omvendt. Den elsker stabile temperaturer, så du
-            snyder den ved at være utilregnelig som en dansk vejrudsigt. Drik
-            også varm te, men pust aldrig på den - der findes ingen
-            dokumentation, men det føles vigtigt. Kan gentages flere gange i
-            løbet af dagen, så længe du ikke får pusten, eller mister viljen til
-            at leve. Andre lignende tricks:“Tag tre lag tøj på og tag dem af
-            igen” eller “Sæt dig tæt på en radiator og så midt i et træk.”
-          </p>
-        </article>
-        <aside id="efficiency" class="info-box">
-          Effektivitet: Lav til middel. Den rammer alligevel alle i januar.
-        </aside>
-        <aside id="requirement" class="info-box">
-          Styrke: Alle med adgang til døre kan udføre den.
+        <!-- HØJRE: Én synlig ad gangen -->
+        <aside class="card-col cards one-card-only">
+          <!-- Standard (vises først) -->
+          <article
+            class="info-card is-visible"
+            data-virus="Influenza"
+            aria-labelledby="t-influenza"
+          >
+            <div class="title-bar" id="t-influenza">INFLUENZA !!!</div>
+            <div class="z-body">
+              <p>
+                Forvir virussen ved at skifte omgivelser hurtigt. Gå fra
+                indendørs til udendørs eller omvendt. Den elsker stabile
+                temperaturer, så du snyder den ved at være utilregnelig som en
+                dansk vejrudsigt.
+              </p>
+              <p>
+                Drik også varm te, men pust aldrig på den – der findes ingen
+                dokumentation, men det føles vigtigt.
+              </p>
+              <p>
+                Kan gentages flere gange i løbet af dagen, så længe du ikke får
+                pusten, eller mister viljen til at leve.
+              </p>
+              <p>
+                Andre lignende tricks: “Tag tre lag tøj på og tag dem af igen”
+                eller “Sæt dig tæt på en radiator, og så midt i et træk.”
+              </p>
+
+              <div class="info-box info-box--yellow">
+                <strong>Effektivitet:</strong><br />Lav til middel. Den rammer
+                alligevel alle i januar.
+              </div>
+              <div class="info-box info-box--green">
+                <strong>Styrke:</strong><br />Alle med adgang til døre kan
+                udføre den.
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="info-card"
+            data-virus="Roskildesyge"
+            aria-labelledby="t-ros"
+          >
+            <div class="title-bar" id="t-ros">ROSKILDESYGE !!!</div>
+            <div class="z-body">
+              <p>
+                Nedkæmp den med social isolation – men kun i et døgn. Virussen
+                bliver ekstremt fornærmet, hvis du ikke deler den med andre. Luk
+                dig inde med chips, fladt cola og eksistentiel tvivl.
+              </p>
+              <p>
+                Denne strategi virker bedst, hvis du nægter at stole på alle,
+                der siger “det går over hurtigt”.
+              </p>
+              <p>
+                Kan ikke bruges flere gange – kroppen husker traumet i årevis.
+              </p>
+              <p>
+                Andre lignende udsagn / tricks: “Jeg tør ikke spise buffet
+                mere”, “Jeg skal bare lige ligge lidt… i 11 timer.”
+              </p>
+
+              <div class="info-box info-box--yellow">
+                <strong>Effektivitet:</strong><br />Høj – du smitter færre, men
+                føler dig alligevel som et vådt viskestykke.
+              </div>
+              <div class="info-box info-box--green">
+                <strong>Styrke:</strong><br />Kræver kun et toilet inden for 4
+                sekunders radius.
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="info-card"
+            data-virus="Borrelia"
+            aria-labelledby="t-borr"
+          >
+            <div class="title-bar" id="t-borr">BORRELIA !!!</div>
+            <div class="z-body">
+              <p>
+                Snyd flåten ved at være unaturligt glat. Smør knæhaser, ankler
+                og albuer ind i så meget myggespray, solcreme eller smør, at
+                flåten glider af som på en teflonpande.
+              </p>
+              <p>
+                Kan kombineres med “Tjek hele kroppen for små vampyrer, når du
+                kommer hjem fra skoven”.
+              </p>
+              <p>
+                Kan bruges uendeligt, så længe du kan leve med følelsen af at
+                være marineret.
+              </p>
+              <p>
+                Andre lignende strategier: “Tag strømperne udenpå bukserne”, “Gå
+                kun steder med asfalt”, “Bliv inde og se DR Nyheder.”
+              </p>
+
+              <div class="info-box info-box--yellow">
+                <strong>Effektivitet:</strong><br />Middel til høj – afhænger af
+                hvor meget du sveder.
+              </div>
+              <div class="info-box info-box--green">
+                <strong>Styrke:</strong><br />Alle med kropsoverflade kan udføre
+                den.
+              </div>
+            </div>
+          </article>
         </aside>
       </section>
     </main>
