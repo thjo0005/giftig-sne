@@ -40,3 +40,10 @@
 .info-box:nth-of-type(2n) {
   background-color: var(--color-infobox-2-bg);
 }
+
+.my_scale {
+  transform: scale (2);
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  fill: black !important;
+}
