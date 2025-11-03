@@ -1,15 +1,27 @@
+/* === Farver og variabler === */
+:root {
+  --gold-1: #e0c06a; /* lys guld */
+  --gold-2: #c29a3a; /* mellem */
+  --gold-3: #6f5722; /* mørk kant */
+  --btn-text: #131313; /* passer til din #head-txt */
+}
+
+/* === Typografi og layouts === */
 #head-txt {
   fill: rgb(54, 54, 54);
 }
+
 .info-graphic,
 .info-text {
   background-color: var(--color-info-bg);
   padding: 20px 0;
 }
+
 .info-graphic {
   border-radius: 0;
   margin: 60px auto 80px auto;
 }
+
 .info-text h2 {
   line-height: 3rem;
   text-align: center;
@@ -17,6 +29,7 @@
   color: var(--color-headline-text-page);
   margin-bottom: 1rem;
 }
+
 .info-text h3 {
   font-size: 0.8rem;
   line-height: 0.8rem;
@@ -24,26 +37,218 @@
   margin: 0;
   padding: 0;
 }
+
 .info-text > *:not(:first-child) {
   margin: 0 clamp(1rem, 10%, 7rem);
 }
+
 .info-text p {
   font-size: 0.8rem;
   line-height: 1.3;
   margin: 0 0 1.2rem 0;
   padding: 0;
 }
+
 .info-box {
   padding: 1.5rem 1rem 0.5rem 1rem;
   background-color: var(--color-infobox-1-bg);
 }
+
 .info-box:nth-of-type(2n) {
   background-color: var(--color-infobox-2-bg);
 }
 
+/* === SVG Styling === */
 .my_scale {
-  transform: scale (2);
+  transform: scale(1.2);
   transform-box: fill-box;
   transform-origin: 50% 50%;
-  fill: black !important;
+}
+
+/* Smooth farveskift i SVG */
+svg path,
+svg polygon,
+svg rect,
+svg circle,
+svg ellipse,
+svg line,
+svg polyline {
+  transition: fill 0.35s ease-in-out;
+}
+
+/***** SVG Baggrund - START *****/
+.info-graphic {
+  background-color: transparent;
+}
+
+#kort-container,
+.svg-wrap {
+  background: transparent;
+}
+/***** SVG Baggrund - SLUT *****/
+
+/* === Knapper styling === */
+
+/* Base-stil til de tre knapper */
+.virus-btn {
+  appearance: none;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  font: 600 14px/1.2 system-ui, -apple-system, Segoe UI, Roboto, Arial,
+    sans-serif;
+  color: var(--btn-text);
+  letter-spacing: 0.02em;
+
+  background: radial-gradient(
+      120% 100% at 30% 15%,
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0) 60%
+    ),
+    linear-gradient(
+      160deg,
+      var(--gold-1) 0%,
+      var(--gold-2) 45%,
+      var(--gold-3) 95%
+    );
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.18);
+
+  cursor: pointer;
+  transition: transform 0.06s ease, box-shadow 0.15s ease, filter 0.15s ease;
+  user-select: none;
+  white-space: nowrap;
+  margin-right: 0.75rem;
+}
+
+.virus-btn:last-child {
+  margin-right: 0;
+}
+
+/* Hover = mere glød */
+.virus-btn:hover {
+  filter: saturate(1.05) contrast(1.02);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.25), 0 6px 14px rgba(0, 0, 0, 0.22);
+}
+
+/* Tryk-animation */
+.virus-btn:active {
+  transform: translateY(1px);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.25), 0 2px 6px rgba(0, 0, 0, 0.18);
+}
+
+/* Focus fra tastatur */
+.virus-btn:focus-visible {
+  outline: 2px solid rgba(0, 0, 0, 0.55);
+  outline-offset: 2px;
+}
+
+/* Aktiv knap (fx hvis du har "selected" tilstand) */
+.virus-btn.is-active {
+  filter: saturate(1.08) contrast(1.05);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.22);
+}
+
+/* Knap-container */
+.virus-btns {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap; /* bryd rækken på mobil */
+}
+
+/* Responsive justering */
+@media (max-width: 480px) {
+  .virus-btn {
+    padding: 0.65rem 1rem;
+    font-size: 15px;
+  }
+}
+
+/**************tekstboks***************/
+/* Layout: kort til venstre, kort-boks til højre */
+.virus-layout {
+  display: grid;
+  grid-template-columns: 1fr 420px; /* venstre fylder, højre fast bredde */
+  gap: 2.5rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+/* Venstre kolonne */
+.map-col svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.virus-btns {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+/* Højre kolonne – kun én boks synlig */
+.cards.one-card-only .info-card {
+  display: none;
+}
+.cards.one-card-only .info-card.is-visible {
+  display: block;
+}
+
+/* Selve kortet (matcher dit zombie-look) */
+.info-card {
+  background: #fff;
+  border-radius: 28px;
+  padding: 1.25rem 1.25rem 1.25rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  line-height: 1.45;
+  font-size: clamp(0.95rem, 0.9rem + 0.2vw, 1.05rem);
+}
+.title-bar {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  font-size: clamp(1rem, 0.95rem + 0.2vw, 1.1rem);
+  padding: 0.75rem 0;
+  border-radius: 22px 22px 0 0;
+  margin: -1.25rem -1.25rem 1rem -1.25rem;
+}
+.info-card p {
+  margin: 0 0 1rem;
+}
+.info-card p strong {
+  font-weight: 800;
+}
+
+.info-box {
+  border-radius: 12px;
+  padding: 1rem 0.9rem;
+  font-size: 0.95rem;
+  margin-top: 0.6rem;
+}
+.info-box--yellow {
+  background: #f8ed9a;
+}
+.info-box--green {
+  background: #dff3d8;
+}
+.info-box--gray {
+  background: #f2f4f5;
+}
+.info-box + .info-box {
+  margin-top: 0.6rem;
+}
+
+/* Responsiv: under 980px lægger de sig under hinanden */
+@media (max-width: 980px) {
+  .virus-layout {
+    grid-template-columns: 1fr;
+  }
+  .card-col {
+    max-width: 540px;
+  }
 }
