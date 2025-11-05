@@ -40,7 +40,7 @@
         <form id="webform">
           <!--KORT -->
           <div class="form-card">
-            <div class="form-titlebar">OVERSKRIFT!!!</div>
+            <div class="form-titlebar">SMITTE - FORMULAR</div>
 
             <div class="form-body">
               <!-- Person & kontakt -->
@@ -66,7 +66,7 @@
                       type="email"
                       id="email"
                       name="email"
-                      placeholder="din@mail.dk"
+                      placeholder="username@gmail.com"
                     />
                   </div>
 
@@ -77,7 +77,7 @@
                       type="tel"
                       id="phone"
                       name="phone"
-                      placeholder="12 34 56 78"
+                      placeholder="+45 12 34 56 78"
                     />
                   </div>
                 </div>
@@ -109,7 +109,7 @@
                 </div>
               </fieldset>
 
-              <!-- Symptomer (blå panel) -->
+              <!-- Symptomer -->
               <fieldset class="form-group panel">
                 <legend class="group-title">Symptomer</legend>
 
@@ -140,7 +140,15 @@
                   </label>
                   <label class="choice">
                     <input type="checkbox" name="symptoms" value="Flåtbid" />
-                    Flåtbid set
+                    Flåtbid
+                  </label>
+                  <label class="choice">
+                    <input type="checkbox" name="symptoms" value="Træthed" />
+                    Træthed
+                  </label>
+                  <label class="choice">
+                    <input type="checkbox" name="symptoms" value="Hovedpine" />
+                    Hovedpine
                   </label>
                 </div>
 
@@ -155,16 +163,19 @@
                 </div>
 
                 <div class="range-wrap">
-                  <label for="intensity">Intensitet (1-10)</label>
+                  <label for="intensity">Intensitet (1-5)</label>
                   <input
                     type="range"
                     id="intensity"
                     name="intensity"
                     min="1"
-                    max="10"
-                    value="5"
+                    max="5"
+                    value="1"
                   />
-                  <div class="range-scale"><span>1</span><span>10</span></div>
+                  <div class="range-scale">
+                    <span>1</span><span>2</span><span>3</span><spann>4</spann
+                    ><span>5</span>
+                  </div>
                 </div>
               </fieldset>
 
@@ -190,9 +201,7 @@
                       <option>Hjem</option>
                       <option>Arbejde</option>
                       <option>Skole</option>
-                      <option>Festival</option>
                       <option>Skov</option>
-                      <option>Andet</option>
                     </select>
                   </div>
                 </div>

@@ -201,7 +201,6 @@ textarea:focus {
 /* panel (C) */
 .panel {
   background: var(--muted);
-  border-radius: var(--r-md);
   padding: 1rem;
   gap: 1rem;
 }
