@@ -22,7 +22,7 @@
           <a href="index.html"> LOGO-TYPE </a>
         </div>
         <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+          <li><a class="menuItem" href="instruction.html">Smittet </a></li>
           <li><a class="menuItem" href="register.html">Indberet</a></li>
         </ul>
         <button class="burger">
@@ -34,13 +34,200 @@
     </header>
 
     <main>
-      <h1>INDBERET</h1>
+      <h1>ER DU BLEVET SMITTET?</h1>
       <section id="form-section">
-        <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
-        </article>
-        <form id="webform"></form>
+        <article id="form-info"></article>
+        <form id="webform">
+          <!--KORT -->
+          <div class="form-card">
+            <div class="form-titlebar">SMITTE - FORMULAR</div>
+
+            <div class="form-body">
+              <!-- Person & kontakt -->
+              <fieldset class="form-group">
+                <legend class="group-title">Person & kontakt</legend>
+
+                <div class="form-row form-row--three">
+                  <div class="field">
+                    <label for="name">Navn</label>
+                    <input
+                      class="input"
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Dit navn"
+                    />
+                  </div>
+
+                  <div class="field">
+                    <label for="email">E-mail</label>
+                    <input
+                      class="input"
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="username@gmail.com"
+                    />
+                  </div>
+
+                  <div class="field">
+                    <label for="phone">Telefon</label>
+                    <input
+                      class="input"
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder="+45 12 34 56 78"
+                    />
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- Hvilken virus? -->
+              <fieldset class="form-group">
+                <legend class="group-title">Hvilken virus?</legend>
+
+                <div
+                  class="choice-row"
+                  role="radiogroup"
+                  aria-labelledby="virusGroup"
+                >
+                  <span id="virusGroup" class="sr-only">Vælg virus</span>
+
+                  <label class="choice">
+                    <input type="radio" name="virus" value="Influenza" />
+                    Influenza
+                  </label>
+                  <label class="choice">
+                    <input type="radio" name="virus" value="Roskildesyge" />
+                    Roskildesyge
+                  </label>
+                  <label class="choice">
+                    <input type="radio" name="virus" value="Borrelia" />
+                    Borrelia
+                  </label>
+                </div>
+              </fieldset>
+
+              <!-- Symptomer -->
+              <fieldset class="form-group panel">
+                <legend class="group-title">Symptomer</legend>
+
+                <div class="choice-row">
+                  <label class="choice">
+                    <input type="checkbox" name="symptoms" value="Feber" />
+                    Feber
+                  </label>
+                  <label class="choice">
+                    <input type="checkbox" name="symptoms" value="Hoste" />
+                    Hoste
+                  </label>
+                  <label class="choice">
+                    <input type="checkbox" name="symptoms" value="Kvalme" />
+                    Kvalme
+                  </label>
+                  <label class="choice">
+                    <input type="checkbox" name="symptoms" value="Opkast" />
+                    Opkast
+                  </label>
+                  <label class="choice">
+                    <input type="checkbox" name="symptoms" value="Diarré" />
+                    Diarré
+                  </label>
+                  <label class="choice">
+                    <input type="checkbox" name="symptoms" value="Udslæt" />
+                    Udslæt
+                  </label>
+                  <label class="choice">
+                    <input type="checkbox" name="symptoms" value="Flåtbid" />
+                    Flåtbid
+                  </label>
+                  <label class="choice">
+                    <input type="checkbox" name="symptoms" value="Træthed" />
+                    Træthed
+                  </label>
+                  <label class="choice">
+                    <input type="checkbox" name="symptoms" value="Hovedpine" />
+                    Hovedpine
+                  </label>
+                </div>
+
+                <div class="field">
+                  <label for="sym-desc">Beskriv dine symptomer</label>
+                  <textarea
+                    id="sym-desc"
+                    name="sym-desc"
+                    rows="4"
+                    placeholder="Skriv kort om forløb og oplevede symptomer…"
+                  ></textarea>
+                </div>
+
+                <div class="range-wrap">
+                  <label for="intensity">Intensitet (1-5)</label>
+                  <input
+                    type="range"
+                    id="intensity"
+                    name="intensity"
+                    min="1"
+                    max="5"
+                    value="1"
+                  />
+                  <div class="range-scale">
+                    <span>1</span><span>2</span><span>3</span><spann>4</spann
+                    ><span>5</span>
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- Tid & sted -->
+              <fieldset class="form-group">
+                <legend class="group-title">Tid & sted</legend>
+
+                <div class="form-row form-row--three">
+                  <div class="field">
+                    <label for="date">Dato for første symptom</label>
+                    <input class="input" type="date" id="date" name="date" />
+                  </div>
+
+                  <div class="field">
+                    <label for="time">Klokkeslæt</label>
+                    <input class="input" type="time" id="time" name="time" />
+                  </div>
+
+                  <div class="field">
+                    <label for="place">Lokation</label>
+                    <select id="place" name="place" class="input">
+                      <option value="" selected disabled>Vælg lokation…</option>
+                      <option>Hjem</option>
+                      <option>Arbejde</option>
+                      <option>Skole</option>
+                      <option>Skov</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-row form-row--one">
+                  <div class="field">
+                    <label for="zipcity">Postnummer / by</label>
+                    <input
+                      class="input"
+                      type="text"
+                      id="zipcity"
+                      name="zipcity"
+                      placeholder="2100 København Ø"
+                    />
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- Knapper -->
+              <div class="form-actions">
+                <button type="reset" class="btn btn--ghost">Fortryd</button>
+                <button type="submit" class="btn btn--primary">Indsend</button>
+              </div>
+            </div>
+          </div>
+        </form>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
