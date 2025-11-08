@@ -6,14 +6,12 @@ const COLORS = {
   Roskildesyge: "#060a444d",
   Borrelia: "#060a444d",
 };
-
 // Hvilken knap styrer hvilken region i SVG'en
 const REGION = {
   Influenza: "#jylland",
   Roskildesyge: "#fyn",
   Borrelia: "#sjælland",
 };
-
 // Hjælper: vælg alle tegne-elementer i en region
 const SHAPES = "path, polygon, rect, circle, ellipse, line, polyline";
 
