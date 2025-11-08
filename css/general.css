@@ -1,7 +1,7 @@
 html {
   font-family: var(--font-family-sans);
-  color: var(--color-text);
-  background-color: var(--color-bg);
+  color: black;
+  background-color: white;
 }
 
 header {
@@ -10,7 +10,7 @@ header {
 
 #main-disclamer {
   height: 225px;
-  background-color: var(--color-head-bg);
+  background-color: black;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -32,17 +32,18 @@ main section {
 h1 {
   font-size: var(--font-h1-size);
   font-weight: var(--font-weight-bold);
-  color: var(--color-text-inverted);
+  color: white;
   margin: 5px 0;
   line-height: 1.3rem;
   text-align: left;
+  border-radius: 10px;
 }
 
 #instruction h1,
 #register h1 {
   margin: 40px 0 20px 0;
   padding: 15px 30px;
-  background-color: var(--color-head-bg);
+  background-color: darkgray;
   font-size: var(--font-h2-size);
 }
 
@@ -56,7 +57,7 @@ h1 {
 .sub {
   font-size: var(--font-sub1-size);
   font-weight: var(--font-weight-light);
-  color: var(--color-text-inverted);
+  color: white;
 }
 
 h2 {
@@ -74,7 +75,7 @@ main > h1 {
 /* NAVIGATION STRUCTURES */
 header > nav {
   height: 100%;
-  background-color: var(--color-menu-bg);
+  background-color: darkgray;
 }
 
 nav ul {
@@ -87,12 +88,12 @@ a {
 
 nav a {
   text-decoration: none;
-  color: var(--color-text);
+  color: black;
 }
 
 /* Måske skal du lave en ny regel for logotype-wrapper, når du har lavet din logotype */
 #logotype-wrapper {
-  background-color: var(--color-logotype-bg);
+  background-color: black;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -100,7 +101,7 @@ nav a {
 }
 
 #logotype-wrapper > a {
-  color: var(--color-text-logotype);
+  color: white;
   font-size: var(--font-logotype-size);
   font-weight: var(--font-weight-medium);
   width: max-content;
@@ -110,8 +111,8 @@ nav a {
 /* Global menu */
 header nav li a {
   margin: 1.5rem;
-  background-color: var(--color-link-bg);
-  color: var(--color-text);
+  background-color: white;
+  color: black;
   font-size: var(--followup-text-size);
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius-links);

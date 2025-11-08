@@ -2,9 +2,9 @@ console.log("Loaded instruction.js");
 
 // Farver pr. knap
 const COLORS = {
-  Influenza: "#D9481A",
-  Roskildesyge: "#7BAF29",
-  Borrelia: "#1F6D4C",
+  Influenza: "#060a444d",
+  Roskildesyge: "#060a444d",
+  Borrelia: "#060a444d",
 };
 
 // Hvilken knap styrer hvilken region i SVG'en
