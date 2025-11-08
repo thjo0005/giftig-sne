@@ -10,7 +10,7 @@ header {
 
 #main-disclamer {
   height: 225px;
-  background-color: black;
+  background-color: #060a44e3;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -43,7 +43,7 @@ h1 {
 #register h1 {
   margin: 40px 0 20px 0;
   padding: 15px 30px;
-  background-color: darkgray;
+  background-color: #060a44e3;
   font-size: var(--font-h2-size);
 }
 
@@ -93,7 +93,7 @@ nav a {
 
 /* Måske skal du lave en ny regel for logotype-wrapper, når du har lavet din logotype */
 #logotype-wrapper {
-  background-color: black;
+  background-color: darkgrey;
   display: flex;
   justify-content: flex-start;
   align-items: center;

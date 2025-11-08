@@ -16,16 +16,6 @@ html {
   line-height: 1.5;
 }
 
-h1,
-h2 {
-  line-height: 1.25;
-}
-
-p,
-li {
-  text-wrap: pretty;
-}
-
 img,
 svg {
   display: block;
@@ -363,4 +353,11 @@ textarea:focus {
   align-items: start;
   max-width: 1200px;
   margin-inline: auto;
+}
+
+#form-summary {
+  display: grid;
+  gap: 2rem;
+  align-items: start;
+  max-width: 1200px;
 }
