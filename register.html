@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
     <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -19,7 +20,7 @@
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html"> Smittefare </a>
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Smittet </a></li>
@@ -32,16 +33,13 @@
         </button>
       </nav>
     </header>
-
     <main>
       <h1>ER DU BLEVET SMITTET?</h1>
       <section id="form-section">
-        <article id="form-info"></article>
         <form id="webform">
           <!--KORT -->
           <div class="form-card">
             <div class="form-titlebar">SMITTE - FORMULAR</div>
-
             <div class="form-body">
               <!-- Person & kontakt -->
               <fieldset class="form-group">
@@ -230,7 +228,9 @@
         </form>
       </section>
 
+      <!--Summary -->
       <section id="form-summary">
+        <br />
         <div class="sum-card">
           <div class="sum-titlebar">SUMMARY</div>
           <div class="sum-body">
@@ -249,12 +249,11 @@
 
             <h3 class="sum-section">Symptomer</h3>
             <div id="sum-symptoms" class="sum-chips">—</div>
+            <p class="sum-mt-1"><strong>Beskrivelse:</strong></p>
+            <p id="sum-desc" class="sum-desc">—</p>
             <p class="sum-mt-2">
               <strong>Intensitet:</strong> <span id="sum-intensity">1</span>/5
             </p>
-            <p class="sum-mt-1"><strong>Beskrivelse:</strong></p>
-            <p id="sum-desc" class="sum-desc">—</p>
-
             <h3 class="sum-section">Tid & sted</h3>
             <dl class="sum-list">
               <dt>Første symptom</dt>
@@ -270,31 +269,21 @@
         </div>
       </section>
     </main>
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <a href="index.html" class="footer-logo">LOGO-TYPE</a>
+
+        <nav class="footer-nav">
+          <a href="index.html">Forside</a>
+          <a href="instruction.html">Smittet</a>
+          <a href="register.html">Indberet</a>
+        </nav>
+
+        <address class="footer-contact">
+          <a href="mailto:kontakt@example.com">thjo0005@stud.ek.dk</a><br />
+          <a href="tel:+4512345678">+45 25 14 62 04</a>
+        </address>
+      </div>
     </footer>
     <script src="js/burger.js"></script>
     <script src="js/register.js" defer></script>
