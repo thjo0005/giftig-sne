@@ -95,25 +95,16 @@ svg polyline {
   border: 1px solid rgba(0, 0, 0, 0.35);
   border-radius: 12px;
   padding: 0.6rem 1rem;
-  font: 600 14px/1.2 system-ui, -apple-system, Segoe UI, Roboto, Arial,
+  font: 700 16px/1.2 system-ui, -apple-system, Segoe UI, Roboto, Arial,
     sans-serif;
-  color: var(--btn-text);
-  letter-spacing: 0.02em;
-
+  color: black;
+  letter-spacing: 0.1em;
   background: radial-gradient(
-      120% 100% at 30% 15%,
+      80% 60% at 20% 15%,
       rgba(255, 255, 255, 0.25),
       rgba(255, 255, 255, 0) 60%
     ),
-    linear-gradient(
-      160deg,
-      var(--gold-1) 0%,
-      var(--gold-2) 45%,
-      var(--gold-3) 95%
-    );
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.18);
-
+    linear-gradient(100deg, #bdbdbd 10%, #bdbdbd 25%, white 98%);
   cursor: pointer;
   transition: transform 0.06s ease, box-shadow 0.15s ease, filter 0.15s ease;
   user-select: none;
@@ -214,13 +205,13 @@ svg polyline {
   margin-top: 0.6rem;
 }
 .info-box--yellow {
-  background: #f8ed9a;
+  background: rgba(169, 169, 169, 0.373);
 }
 .info-box--green {
-  background: #dff3d8;
+  background: rgba(169, 169, 169, 0.373);
 }
 .info-box--gray {
-  background: #f2f4f5;
+  background: rgba(169, 169, 169, 0.373);
 }
 .info-box + .info-box {
   margin-top: 0.6rem;

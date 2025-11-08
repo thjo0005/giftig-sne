@@ -2,18 +2,16 @@ console.log("Loaded instruction.js");
 
 // Farver pr. knap
 const COLORS = {
-  Influenza: "#580c05ff",
-  Roskildesyge: "#04254ade",
-  Borrelia: "#103c2aff",
+  Influenza: "#060a444d",
+  Roskildesyge: "#060a444d",
+  Borrelia: "#060a444d",
 };
-
 // Hvilken knap styrer hvilken region i SVG'en
 const REGION = {
   Influenza: "#jylland",
   Roskildesyge: "#fyn",
   Borrelia: "#sjælland",
 };
-
 // Hjælper: vælg alle tegne-elementer i en region
 const SHAPES = "path, polygon, rect, circle, ellipse, line, polyline";
 
