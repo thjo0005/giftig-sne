@@ -82,14 +82,14 @@ select,
 :root {
   --card-bg: #fff;
   --shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-  --black: #000;
+  --black: #060a44e3;
   --text: #111;
   --label: #5a5a5a;
-  --muted: #eaeff6; /* lys blå panel */
-  --input-top: #e9eef7; /* lyseblå felter i A+B */
-  --input-panel: #f8f6e6; /* lysegul felter i C-panel */
-  --orange: #ea6731;
-  --orange-press: #d95e2d;
+  --muted: #fff; /* lys blå panel */
+  --input-top: #fff; /* lyseblå felter i A+B */
+  --input-panel: #fff; /* lysegul felter i C-panel */
+  --orange: #060a446a;
+  --orange-press: #060a44cf;
   --r-xl: 28px;
   --r-md: 12px;
   --r-sm: 8px;
@@ -217,7 +217,7 @@ textarea:focus {
 }
 .range-scale {
   font-size: 0.8rem;
-  color: var(--label);
+  color: #060a44cf;
   display: flex;
   justify-content: space-between;
 }
@@ -253,7 +253,7 @@ textarea:focus {
   position: relative;
 }
 .btn--primary:hover {
-  background: var(--orange-press);
+  background: #060a44cf;
 }
 .btn--primary::after {
   content: "→";
@@ -274,4 +274,93 @@ textarea:focus {
   clip: rect(0 0 0 0);
   white-space: nowrap;
   border: 0;
+}
+
+/* ===== Summary-kort ===== */
+
+.sum-card {
+  position: sticky;
+  top: 1rem;
+  background: var(--card-bg);
+  border-radius: var(--r-xl);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.sum-titlebar {
+  background: var(--black);
+  color: #fff;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  padding: 0.8rem 1rem;
+  font-size: clamp(1.05rem, 0.9rem + 0.6vw, 1.25rem);
+}
+
+.sum-body {
+  padding: 1rem 1.1rem 1.2rem;
+  display: grid;
+  gap: 0.9rem;
+  font-size: 0.95rem;
+}
+
+.sum-section {
+  font-size: 0.95rem;
+  font-weight: 800;
+  margin-top: 0.2rem;
+}
+
+.sum-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.35rem 0.75rem;
+}
+
+.sum-list dt {
+  color: var(--label);
+}
+
+.sum-list dd {
+  justify-self: end;
+  text-align: right;
+}
+
+.sum-line {
+  margin-top: -0.2rem;
+}
+
+.sum-desc {
+  background: var(--muted);
+  border-radius: var(--r-sm);
+  padding: 0.6rem 0.7rem;
+  white-space: pre-wrap;
+}
+
+.sum-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.sum-chip {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 999px;
+  padding: 0.25rem 0.55rem;
+  font-size: 0.9rem;
+}
+
+.sum-mt-1 {
+  margin-top: 0.25rem;
+}
+.sum-mt-2 {
+  margin-top: 0.5rem;
+}
+
+#form-section {
+  display: grid;
+  gap: 2rem;
+  align-items: start;
+  max-width: 1200px;
+  margin-inline: auto;
 }

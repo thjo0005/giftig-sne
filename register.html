@@ -229,11 +229,45 @@
           </div>
         </form>
       </section>
+
       <section id="form-summary">
-        <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
-        </article>
+        <div class="sum-card">
+          <div class="sum-titlebar">SUMMARY</div>
+          <div class="sum-body">
+            <h3 class="sum-section">Person & kontakt</h3>
+            <dl class="sum-list">
+              <dt>Navn</dt>
+              <dd id="sum-name">—</dd>
+              <dt>E-mail</dt>
+              <dd id="sum-email">—</dd>
+              <dt>Telefon</dt>
+              <dd id="sum-phone">—</dd>
+            </dl>
+
+            <h3 class="sum-section">Virus</h3>
+            <p id="sum-virus" class="sum-line">—</p>
+
+            <h3 class="sum-section">Symptomer</h3>
+            <div id="sum-symptoms" class="sum-chips">—</div>
+            <p class="sum-mt-2">
+              <strong>Intensitet:</strong> <span id="sum-intensity">1</span>/5
+            </p>
+            <p class="sum-mt-1"><strong>Beskrivelse:</strong></p>
+            <p id="sum-desc" class="sum-desc">—</p>
+
+            <h3 class="sum-section">Tid & sted</h3>
+            <dl class="sum-list">
+              <dt>Første symptom</dt>
+              <dd id="sum-date">—</dd>
+              <dt>Klokkeslæt</dt>
+              <dd id="sum-time">—</dd>
+              <dt>Lokation</dt>
+              <dd id="sum-place">—</dd>
+              <dt>Postnr./by</dt>
+              <dd id="sum-zipcity">—</dd>
+            </dl>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
@@ -263,6 +297,7 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
+    <script src="js/register.js" defer></script>
     <!-- <script src="js/main.js"></script> -->
   </body>
 </html>
