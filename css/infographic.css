@@ -1,11 +1,3 @@
-/* === Farver og variabler === */
-:root {
-  --gold-1: #e0c06a; /* lys guld */
-  --gold-2: #c29a3a; /* mellem */
-  --gold-3: #6f5722; /* mørk kant */
-  --btn-text: #131313; /* passer til din #head-txt */
-}
-
 /* === Typografi og layouts === */
 #head-txt {
   fill: rgb(54, 54, 54);

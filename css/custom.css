@@ -1,19 +1,19 @@
 :root {
   /* Colours */
-  --color-bg: #fceb94; /* page background /*
+  --color-bg: #fff; /* page background /*
 
   /* Header */
-  --color-head-bg: #ff4b00;
+  --color-head-bg: #060a44e3;
 
   /* Logotype */
   --color-logotype-bg: #000;
-  --color-text-logotype: #fffae2;
+  --color-text-logotype: #fff;
   --font-logotype-size: 2rem;
 
   /* Global menu */
   --color-menu-bg: #6f90eb;
   /* Links */
-  --color-link-bg: #fffae2;
+  --color-link-bg: #fff;
   --color-link-hover: #ffffff; /* used */
   --color-link-active: #dbe2f5; /* used */
   --border-radius-links: 37px;
@@ -23,11 +23,11 @@
   --font-sub1-size: 2rem;
   --font-h2-size: 2rem;
   --font-h3-size: 1.5rem;
-  --color-headline-bg: #000;
+  --color-headline-bg: #060a44e3;
   --color-headline-text-page: #fffae2;
 
   /* Tekst */
-  --color-text: #000;
+  --color-text: #fff;
   --color-text-inverted: #fffae2;
 
   /*  Marginer */
@@ -37,13 +37,13 @@
   --border-radius: 12px;
 
   /* Cards */
-  --color-card-bg: #fff;
-  --color-cta-card-bg: #ff4b00;
+  --color-card-bg: #dbe2f5;
+  --color-cta-card-bg: #060a44e3;
   /* news-cards */
-  --color-news-bg: #fffae2;
+  --color-news-bg: #dce2f3;
   --color-news-bg-inverted: #dbe2f5;
-  --color-cta-newscard-bg: #ffa680;
-  --color-cta-newscard-bg-inverted: #6f90eb;
+  --color-cta-newscard-bg: #060a44e3;
+  --color-cta-newscard-bg-inverted: #060a44e3;
 
   /* Fonts */
   --font-family-sans: "Rubik", ui-sans-serif;
@@ -64,6 +64,6 @@
 
   /* Infographics */
   --color-info-bg: #fff;
-  --color-infobox-1-bg: #fceb94;
+  --color-infobox-1-bg: #fff;
   --color-infobox-2-bg: #def5db;
 }
