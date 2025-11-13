@@ -1,6 +1,6 @@
 :root {
   /* Colours */
-  --color-bg: #fceb94; /* page background /*
+  --color-bg: #fff; /* page background /*
 
   /* Header */
   --color-head-bg: #060a44e3;
@@ -64,6 +64,6 @@
 
   /* Infographics */
   --color-info-bg: #fff;
-  --color-infobox-1-bg: #fceb94;
+  --color-infobox-1-bg: #fff;
   --color-infobox-2-bg: #def5db;
 }

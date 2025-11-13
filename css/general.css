@@ -75,7 +75,7 @@ main > h1 {
 /* NAVIGATION STRUCTURES */
 header > nav {
   height: 100%;
-  background-color: darkgray;
+  background-color: #fff;
 }
 
 nav ul {
@@ -91,9 +91,8 @@ nav a {
   color: black;
 }
 
-/* Måske skal du lave en ny regel for logotype-wrapper, når du har lavet din logotype */
 #logotype-wrapper {
-  background-color: darkgrey;
+  background-color: #fff;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -111,8 +110,8 @@ nav a {
 /* Global menu */
 header nav li a {
   margin: 1.5rem;
-  background-color: white;
-  color: black;
+  background-color: #060a44e3;
+  color: #fff;
   font-size: var(--followup-text-size);
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius-links);
