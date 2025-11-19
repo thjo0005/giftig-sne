@@ -1,21 +1,22 @@
 :root {
+  color-scheme: light;
   /* Colours */
-  --color-bg: #fff; /* page background /*
+  --color-bg:light-dark(#ffffff, #3e3e42); /* page background /*
 
   /* Header */
-  --color-head-bg: #060a44e3;
+  --color-head-bg:light-dark(#ffffff, #3e3e42)
 
   /* Logotype */
-  --color-logotype-bg: #000;
-  --color-text-logotype: #fff;
+  --color-logotype-bg: light-dark(#fff, #000)
+  --color-text-logotype:light-dark(#fff, #000)
   --font-logotype-size: 2rem;
 
   /* Global menu */
-  --color-menu-bg: #6f90eb;
+  --color-menu-bg: light-dark(#6f90eb, #222)
   /* Links */
-  --color-link-bg: #fff;
-  --color-link-hover: #ffffff; /* used */
-  --color-link-active: #dbe2f5; /* used */
+  --color-link-bg: light-dark(#060a44e3, #060a44e3 )
+  --color-link-hover: light-dark(#060a44e3, #060a44e3 )
+  --color-link-active: light-dark(#060a44e3, #060a44e3 )
   --border-radius-links: 37px;
 
   /* Headlines og rubrik */
@@ -23,12 +24,12 @@
   --font-sub1-size: 2rem;
   --font-h2-size: 2rem;
   --font-h3-size: 1.5rem;
-  --color-headline-bg: #060a44e3;
+  --color-headline-bg: light-dark(#060a44e3, #252526);
   --color-headline-text-page: #fffae2;
 
   /* Tekst */
-  --color-text: #fff;
-  --color-text-inverted: #fffae2;
+  --color-text: light-dark(#fffae2, #fffae2);
+  --color-text-inverted:(#fffae2, #fffae2);
 
   /*  Marginer */
   --margin-head-bottom: 20px;
@@ -37,13 +38,13 @@
   --border-radius: 12px;
 
   /* Cards */
-  --color-card-bg: #dbe2f5;
-  --color-cta-card-bg: #060a44e3;
+  --color-card-bg: light-dark(#9AB0CF, #1e1e1e);
+  --color-cta-card-bg: light-dark(#060a44e3, #007acc);
   /* news-cards */
-  --color-news-bg: #dce2f3;
-  --color-news-bg-inverted: #dbe2f5;
-  --color-cta-newscard-bg: #060a44e3;
-  --color-cta-newscard-bg-inverted: #060a44e3;
+  --color-news-bg: light-dark(#dce2f3, #1e1e1e);
+  --color-news-bg-inverted: light-dark(#dce2f3, #1e1e1e);
+  --color-cta-newscard-bg:light-dark(#060a44e3, #007acc);
+  --color-cta-newscard-bg-inverted:light-dark(#060a44e3, #007acc);
 
   /* Fonts */
   --font-family-sans: "Rubik", ui-sans-serif;
@@ -63,7 +64,147 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #fff;
-  --color-infobox-1-bg: #fff;
-  --color-infobox-2-bg: #def5db;
+  --color-info-bg: light-dark(#fff, #ffffffff);
+  --color-infobox-1-bg:light-dark(#fff, #fff);
+  --color-infobox-2-bg: light-dark (#def5db, #fff);
+  --color-infographic-head-text: light-dark(#363636, #f5f5f5);
+  --color-instruction-card-bg: light-dark(#ffffff, #1f1f24);
+  --color-instruction-card-text: light-dark(#060a44, #f5f5f5);
+  --color-instruction-info-box-bg: light-dark(rgba(169, 169, 169, 0.37), rgba(255, 255, 255, 0.08));
+  --color-virus-btn-text: light-dark(#000000, #ffffff);
+  --color-virus-btn-border: light-dark(rgba(0, 0, 0, 0.35), rgba(255, 255, 255, 0.35));
+  --color-virus-btn-focus: light-dark(rgba(0, 0, 0, 0.55), rgba(255, 255, 255, 0.6));
+  --virus-btn-bg: radial-gradient(
+      80% 60% at 20% 15%,
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0) 60%
+    ),
+    linear-gradient(100deg, #bdbdbd 10%, #bdbdbd 25%, white 98%);
+  
+}
+
+/**********DARK MODE***********/
+#toggle {
+  background-color: light-dark(#060a44e3, #007acc );
+  color: #def5db;
+  border: none;
+  padding: 6px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/*****Footer*****/
+/* === Enkel Footer === */
+.site-footer {
+  background: light-dark(#060a44e3, #007acc );
+  color: #def5db;
+  padding: 1.5rem 1rem;
+  margin-top: 3rem;
+  border-top-left-radius: var(--r-xl);
+  border-top-right-radius: var(--r-xl);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-logo {
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #def5db;
+  font-size: 1rem;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-nav a {
+  color: #def5db;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+.footer-contact a {
+  color: #def5db;
+  text-decoration: none;
+}
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+/* Mobilvisning */
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+
+
+/******AppleKnapDarkMode*****/
+/* Selve switchen */
+.ios-switch {
+  position: relative;
+  width: 50px;
+  height: 28px;
+  border-radius: 999px;
+  border: none;
+  background-color: #ccc;          /* Off baggrund */
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+  transition: background-color 0.25s ease;
+}
+
+/* Fjern evt. standard-knap-styles */
+.ios-switch::-moz-focus-inner {
+  border: 0;
+}
+
+/* Den runde “knop” ovenpå */
+.ios-switch::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  transition: transform 0.25s ease;
+}
+
+.ios-switch.on::before {
+  transform: translateX(22px);     /* Flyt knoppen til højre */
+}
+
+
+html.dark {
+  color-scheme: dark;
+  --virus-btn-bg: radial-gradient(
+      80% 60% at 20% 15%,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0) 60%
+    ),
+    linear-gradient(100deg, #1f1f24 10%, #1f1f24 25%, #3b3b3f 98%);
 }

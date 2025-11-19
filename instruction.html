@@ -19,7 +19,7 @@
   <body id="instruction">
     <header>
       <nav>
-         <div id="logotype-wrapper" class="logo">
+        <div id="logotype-wrapper" class="logo">
           <a href="index.html">
             <svg
               id="Layer_1"
@@ -30,11 +30,11 @@
               <defs>
                 <style>
                   .cls-1 {
-                    fill: #303990;
+                    fill: light-dark(#303990, #007acc);
                   }
 
                   .cls-2 {
-                    fill: #2e3a90;
+                    fill: light-dark(#303990, #007acc);
                   }
                 </style>
               </defs>
@@ -238,9 +238,10 @@
             </svg>
           </a>
         </div>
-        <ul class="menu">
+       <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Smittet </a></li>
           <li><a class="menuItem" href="register.html">Indberet</a></li>
+          <button id="toggle" class="ios-switch"></button>
         </ul>
         <button class="burger">
           <span class="line"></span>
@@ -643,5 +644,6 @@
     </footer>
     <script src="js/burger.js"></script>
     <script src="js/instruction.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
