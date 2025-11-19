@@ -1,4 +1,7 @@
 /* === Typografi og layouts === */
+:root {
+  color-scheme: light;
+}
 #head-txt {
   fill: rgb(54, 54, 54);
 }
@@ -255,4 +258,8 @@ svg polyline {
 }
 .info-card .z-body p {
   font-size: 18px !important;
+}
+
+html.dark {
+  color-scheme: dark;
 }
