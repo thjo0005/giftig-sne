@@ -3,7 +3,7 @@
   color-scheme: light;
 }
 #head-txt {
-  fill: rgb(54, 54, 54);
+  fill: var(--color-infographic-head-text);
 }
 
 .info-graphic,
@@ -87,19 +87,14 @@ svg polyline {
 /* Base-stil til de tre knapper */
 .virus-btn {
   appearance: none;
-  border: 1px solid rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--color-virus-btn-border);
   border-radius: 12px;
   padding: 0.6rem 1rem;
   font: 700 16px/1.2 system-ui, -apple-system, Segoe UI, Roboto, Arial,
     sans-serif;
-  color: black;
+  color: var(--color-virus-btn-text);
   letter-spacing: 0.1em;
-  background: radial-gradient(
-      80% 60% at 20% 15%,
-      rgba(255, 255, 255, 0.25),
-      rgba(255, 255, 255, 0) 60%
-    ),
-    linear-gradient(100deg, #bdbdbd 10%, #bdbdbd 25%, white 98%);
+  background: var(--virus-btn-bg);
   cursor: pointer;
   transition: transform 0.06s ease, box-shadow 0.15s ease, filter 0.15s ease;
   user-select: none;
@@ -126,7 +121,7 @@ svg polyline {
 
 /* Focus fra tastatur */
 .virus-btn:focus-visible {
-  outline: 2px solid rgba(0, 0, 0, 0.55);
+  outline: 2px solid var(--color-virus-btn-focus);
   outline-offset: 2px;
 }
 
@@ -185,7 +180,8 @@ svg polyline {
 
 /* Selve kortet (matcher dit zombie-look) */
 .info-card {
-  background: #fff;
+  background: var(--color-instruction-card-bg);
+  color: var(--color-instruction-card-text);
   border-radius: 28px;
   padding: 1.25rem 1.25rem 1.25rem;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
@@ -199,14 +195,10 @@ svg polyline {
   font-size: 0.95rem;
   margin-top: 0.6rem;
 }
-.info-box--yellow {
-  background: rgba(169, 169, 169, 0.373);
-}
-.info-box--green {
-  background: rgba(169, 169, 169, 0.373);
-}
+.info-box--yellow,
+.info-box--green,
 .info-box--gray {
-  background: rgba(169, 169, 169, 0.373);
+  background: var(--color-instruction-info-box-bg);
 }
 .info-box + .info-box {
   margin-top: 0.6rem;

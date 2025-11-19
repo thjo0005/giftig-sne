@@ -1,25 +1,26 @@
 html {
   font-family: var(--font-family-sans);
-  color: black;
-  background-color: white;
+  color: var(--color-text);
+  background-color: var(--color-bg);
 }
 
 header {
   height: min-content;
 }
 
-#main-disclamer {
-  height: 225px;
-  background-color: #060a44e3;
+#main-disclaimer {
+  height: 100px;
+  background-color: var(--color-headline-bg);
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 2rem;
-  padding-bottom: 2%;
+  padding-left: 13rem;
+  padding-bottom: 1%;
   margin-bottom: var(--margin-head-bottom);
+  border-radius: 22px;
 }
 
-#main-disclamer-content {
+#main-disclaimer-content {
   display: flex;
   column-gap: 1rem;
 }
@@ -32,7 +33,7 @@ main section {
 h1 {
   font-size: var(--font-h1-size);
   font-weight: var(--font-weight-bold);
-  color: white;
+  color: #fff;
   margin: 5px 0;
   line-height: 1.3rem;
   text-align: left;
@@ -43,7 +44,7 @@ h1 {
 #register h1 {
   margin: 40px 0 20px 0;
   padding: 15px 30px;
-  background-color: #060a44e3;
+  background-color: var(--color-headline-bg);
   font-size: var(--font-h2-size);
 }
 
@@ -57,7 +58,7 @@ h1 {
 .sub {
   font-size: var(--font-sub1-size);
   font-weight: var(--font-weight-light);
-  color: white;
+  color: var(--color-text-inverted);
 }
 
 h2 {
@@ -75,7 +76,7 @@ main > h1 {
 /* NAVIGATION STRUCTURES */
 header > nav {
   height: 100%;
-  background-color: #fff;
+  background-color: var(--color-head-bg);
 }
 
 nav ul {
@@ -88,11 +89,11 @@ a {
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: var(--color-text);
 }
 
 #logotype-wrapper {
-  background-color: #fff;
+  background-color: var(--color-logotype-bg);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -100,7 +101,7 @@ nav a {
 }
 
 #logotype-wrapper > a {
-  color: white;
+  color: var(--color-text-logotype);
   font-size: var(--font-logotype-size);
   font-weight: var(--font-weight-medium);
   width: max-content;
@@ -110,21 +111,16 @@ nav a {
 /* Global menu */
 header nav li a {
   margin: 1.5rem;
-  background-color: #060a44e3;
-  color: #fff;
+  background-color: light-dark(#060a44e3, #007acc);
+  color: var(--color-text-inverted);
   font-size: var(--followup-text-size);
   padding: 0.5rem 1rem;
-  border-radius: var(--border-radius-links);
+  border-radius: 25px;
 }
 
 /* Pilen efter menu-tekst */
 header > nav li > a:after {
   content: " \2192";
-}
-
-/* Global menu hover effekt - Lav den om til det, du synes */
-nav a:hover {
-  background-color: var(--color-link-hover);
 }
 
 nav a:active {
