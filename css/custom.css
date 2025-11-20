@@ -80,6 +80,40 @@
       rgba(255, 255, 255, 0) 60%
     ),
     linear-gradient(100deg, #bdbdbd 10%, #bdbdbd 25%, white 98%);
+
+  /* Register form */
+  --card-bg: light-dark(#ffffff, #1f1f24);
+  --black: light-dark(#060a44e3, #0a63cf);
+  --text: light-dark(#111111, #f5f5f5);
+  --label: light-dark(#5a5a5a, #cbd0ff);
+  --muted: light-dark(#f5f8ff, #2b2b33);
+  --input-top: light-dark(#ffffff, #262630);
+  --input-panel: light-dark(#ffffff, #262630);
+  --input-border: light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.25));
+  --input-focus-bg: light-dark(#ffffff, #31313b);
+  --input-focus-border: light-dark(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.4));
+  --choice-bg: light-dark(#ffffff, #2a2a33);
+  --choice-border: light-dark(rgba(0, 0, 0, 0.12), rgba(255, 255, 255, 0.25));
+  --choice-text: light-dark(#060a44, #f5f5f5);
+  --choice-accent: light-dark(#060a44, #d5dbff);
+  --range-scale-color: light-dark(#060a44cf, #cfd5ff);
+  --btn-bg: light-dark(#ffffff, #1f1f24);
+  --btn-border: light-dark(rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.25));
+  --btn-text: light-dark(#060a44, #f5f5f5);
+  --sum-chip-bg: light-dark(#ffffff, #2a2a33);
+  --sum-chip-border: light-dark(rgba(0, 0, 0, 0.12), rgba(255, 255, 255, 0.22));
+  --sum-chip-text: light-dark(#060a44, #f5f5f5);
+  --summary-section-color: light-dark(#060a44cf, #cbd0ff);
+  --summary-strong-color: light-dark(#060a44cf, #cbd0ff);
+  --summary-counter-color: light-dark(#060a44cf, #cbd0ff);
+  --summary-dash-color: light-dark(#060a44cf, #cbd0ff);
+  --orange: light-dark(#060a446a, #4c72ff);
+  --orange-press: light-dark(#060a44cf, #738dff);
+  --form-background-color: light-dark(#ffffff, #1f1f24);
+  --info-background-color: light-dark(#f5f8ff, #1a1a1f);
+  --headline-bg-color-inverted: light-dark(#060a44e3, #2d2d34);
+  --headline-color-inverted: light-dark(#c6d7ff, #e0e6ff);
+  --group-title-color: light-dark(#060a44cf, #cbd0ff);
   
 }
 
@@ -97,7 +131,7 @@
 /* === Enkel Footer === */
 .site-footer {
   background: light-dark(#060a44e3, #007acc );
-  color: #def5db;
+  color: #ffffffff;
   padding: 1.5rem 1rem;
   margin-top: 3rem;
   border-top-left-radius: var(--r-xl);

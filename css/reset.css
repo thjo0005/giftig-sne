@@ -1,3 +1,7 @@
+:root {
+  color-scheme: light;
+}
+
 @view-transition {
   navigation: auto;
 }
@@ -118,6 +122,7 @@ select,
   font-weight: 800;
   font-size: 1rem;
   margin: 0.25rem 0;
+  color: var(--group-title-color);
 }
 
 /* rækker */
@@ -154,7 +159,7 @@ select,
 textarea {
   width: 100%;
   background: var(--input-top);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--input-border);
   border-radius: var(--r-sm);
   padding: 0.7rem 0.8rem;
   font: inherit;
@@ -164,8 +169,8 @@ textarea {
 .input:focus,
 select:focus,
 textarea:focus {
-  background: #fff;
-  border-color: rgba(0, 0, 0, 0.3);
+  background: var(--input-focus-bg);
+  border-color: var(--input-focus-border);
 }
 
 /* radio/checkbox chips */
@@ -179,13 +184,14 @@ textarea:focus {
   align-items: center;
   gap: 0.5rem;
   padding: 0.4rem 0.6rem;
-  background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: var(--choice-bg);
+  border: 1px solid var(--choice-border);
   border-radius: 999px;
   font-size: 0.95rem;
+  color: var(--choice-text);
 }
 .choice input {
-  accent-color: #111;
+  accent-color: var(--choice-accent);
 }
 
 /* panel (C) */
@@ -207,7 +213,7 @@ textarea:focus {
 }
 .range-scale {
   font-size: 0.8rem;
-  color: #060a44cf;
+  color: var(--range-scale-color);
   display: flex;
   justify-content: space-between;
 }
@@ -223,10 +229,11 @@ textarea:focus {
   appearance: none;
   cursor: pointer;
   border-radius: 999px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--btn-border);
   padding: 0.75rem 1rem;
   font-weight: 600;
-  background: #fff;
+  background: var(--btn-bg);
+  color: var(--btn-text);
 }
 .btn:focus-visible {
   outline: 2px solid rgba(0, 0, 0, 0.5);
@@ -243,7 +250,7 @@ textarea:focus {
   position: relative;
 }
 .btn--primary:hover {
-  background: #060a44cf;
+  background: var(--orange-press);
 }
 .btn--primary::after {
   content: "→";
@@ -298,6 +305,7 @@ textarea:focus {
   font-size: 0.95rem;
   font-weight: 800;
   margin-top: 0.2rem;
+  color: var(--summary-section-color);
 }
 
 .sum-list {
@@ -313,10 +321,12 @@ textarea:focus {
 .sum-list dd {
   justify-self: end;
   text-align: right;
+  color: var(--summary-dash-color);
 }
 
 .sum-line {
   margin-top: -0.2rem;
+  color: var(--summary-dash-color);
 }
 
 .sum-desc {
@@ -324,6 +334,10 @@ textarea:focus {
   border-radius: var(--r-sm);
   padding: 0.6rem 0.7rem;
   white-space: pre-wrap;
+  color: var(--summary-dash-color);
+}
+.sum-body strong {
+  color: var(--summary-strong-color);
 }
 
 .sum-chips {
@@ -331,13 +345,17 @@ textarea:focus {
   flex-wrap: wrap;
   gap: 0.4rem;
 }
+#sum-symptoms {
+  color: var(--summary-dash-color);
+}
 
 .sum-chip {
-  background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: var(--sum-chip-bg);
+  border: 1px solid var(--sum-chip-border);
   border-radius: 999px;
   padding: 0.25rem 0.55rem;
   font-size: 0.9rem;
+  color: var(--sum-chip-text);
 }
 
 .sum-mt-1 {
@@ -345,6 +363,13 @@ textarea:focus {
 }
 .sum-mt-2 {
   margin-top: 0.5rem;
+  color: var(--summary-counter-color);
+}
+
+.sum-body #sum-intensity,
+.sum-body #sum-intensity + span,
+.sum-body #sum-intensity ~ span {
+  color: var(--summary-counter-color);
 }
 
 #form-section {
