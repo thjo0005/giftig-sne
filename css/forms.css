@@ -1,10 +1,9 @@
 #webform {
-  background-color: var(--form-background-color);
+  background-color: transparent;
 }
 
 #form-section,
 #form-summary {
-  background-color: var(--info-background-color);
   padding: 0;
 }
 #form-summary h2 {

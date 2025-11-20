@@ -144,7 +144,7 @@ footer a {
   display: grid;
   gap: 0.75rem;
   padding: 1rem 1.25rem;
-  background: #fff;
+  background: light-dark(#fff, #3e3e42);
   border: 0;
   border-radius: 14px;
   box-shadow: 0 18px 48px rgba(0, 0, 0, 0.22);
@@ -192,7 +192,7 @@ footer a {
   font: 700 1.1rem/1.3 system-ui, sans-serif;
 }
 [popover] p {
-  color: #333;
+  color: light-dark(#000000, #fff);
 }
 
 /* Scroll inden i popover hvis teksten er lang */
